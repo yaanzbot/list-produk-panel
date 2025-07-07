@@ -1,0 +1,193 @@
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.search-box {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  padding-left: 40px;
+  background: #fff url('https://cdn-icons-png.flaticon.com/512/622/622669.png') no-repeat 10px center;
+  background-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #0984e3;
+  box-shadow: 0 0 0 3px rgba(9, 132, 227, 0.3);
+}
+
+.card {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0984e3;
+  margin-bottom: 30px;
+}
+
+.panel-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #0984e3;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.card span {
+  font-weight: bold;
+  color: #d63031;
+}
+
+.card-img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00b894;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #019875;
+}
+
+.highlight {
+  border: 2px solid #e17055;
+}
+
+.bonus {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #e17055;
+  font-weight: bold;
+}
+
+.terms {
+  margin-top: 40px;
+  background-color: #dfe6e9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.terms h2 {
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.terms ul {
+  list-style: none;
+  padding: 0;
+}
+
+.terms li {
+  padding: 8px 0;
+  border-bottom: 1px solid #b2bec3;
+}
+
+/* GLASS EFFECT untuk kartu */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+/* HOVER efek lembut */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVE untuk HP */
+@media screen and (max-width: 600px) {
+  .card {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .search-box input {
+    width: 90%;
+  }
+}
+
+/* Animasi Slide Masuk */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: slideUp 0.7s ease forwards;
+  opacity: 0;
+}
+
+/* Tambahkan delay beda-beda biar elegan */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+.card:nth-child(8) { animation-delay: 0.8s; }
+.card:nth-child(9) { animation-delay: 0.9s; }
+.card:nth-child(10) { animation-delay: 1.0s;}
+
+}
