@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>List Panel Pterodactyl</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Tambahkan di <head> sebelum </head> -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<script>
+  function filterCards() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.panel-cards .card');
+
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      card.style.display = text.includes(input) ? 'flex' : 'none';
+    });
+  }
+</script>
+<body>
+  <div class="card">
+  <!-- Gambar URL Paket -->
+  <img src="https://files.catbox.moe/6yxgm4.png" alt="Paket 1GB" class="card-img">
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="🔍 Cari paket yang mau di beli..." onkeyup="filterCards()">
+</div>
+
+    <h1>📦 List Panel Pterodactyl</h1>
+
+    <div class="panel-cards">
+      <!-- Paket Loop -->
+      <div class="card" data-aos="fade-up">
+        <h3>📮 1GB</h3>
+        <p>Harga: <span>1K / Bulan</span></p>
+        <a href="https://wa.me/6285713826346?text=Beli%20Panel%201GB" target="_blank" class="btn">Beli Sekarang</a>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <h3>📮 2GB</h3>
+        <p>Harga: <span>2K / Bulan</span></p>
+        <a href="https://wa.me/6285713826346?text=Beli%20Panel%202GB" target="_blank" class="btn">Beli Sekarang</a>
+      </div>
+
+      <div class="card" data-aos="fade-up">
+        <h3>📮 3GB</h3>
+        <p>Harga: <span>3K / Bulan</span></p>
+        <a href="https://wa.me/6285713826346?text=Beli%20Panel%203GB" target="_blank" class="btn">Beli Sekarang</a>
+      </div>
+
+      <!-- Tambahkan sisanya -->
+      <div class="card" data-aos="fade-up"><h3>📮 4GB</h3>
+      <p>Harga: <span>4K / Bulan</span></p>
+      <a href="https://wa.me/6285713826346?text=Beli%20Panel%204GB" class="btn" target="_blank">Beli Sekarang</a>
+      </div>
+      
+      <div class="card" data-aos="fade-up"><h3>📮 5GB</h3>
+      <p>Harga: <span>5K / Bulan</span></p>
+      <a href="https://wa.me/6285713826346?text=Beli%20Panel%205GB" class="btn" target="_blank">Beli Sekarang</a>
+      </div>
+      
+      <div class="card" data-aos="fade-up"><h3>📮 6GB</h3>
+      <p>Harga: <span>6K / Bulan</span></p>
+      <a href="https://wa.me/6285713826346?text=Beli%20Panel%206GB" class="btn" target="_blank">Beli Sekarang</a>
+      </div>
+      
+      <div class="card" data-aos="fade-up"><h3>📮 7GB</h3>
+      <p>Harga: <span>7K / Bulan</span></p>
+      <a href="https://wa.me/6285713826346?text=Beli%20Panel%207GB" class="btn" target="_blank">Beli Sekarang</a>
+      </div>
+      
+      <div class="card" data-aos="fade-up"><h3>📮 8GB</h3>
+      <p>Harga: <span>8K / Bulan</span></p>
+      <a href="https://wa.me/6285713826346?text=Beli%20Panel%208GB" class="btn" target="_blank">Beli Sekarang</a>
+      </div>
+      
+      <div class="card"><h3>📮 9GB</h3>
+      <p>Harga: <span>9K / Bulan</span></p>
+      <a href="https://wa.me/6285713826346?text=Beli%20Panel%209GB" class="btn" target="_blank">Beli Sekarang</a>
+      </div>
+      
+      <div class="card highlight">
+        <h3>🌐 UNLIMITED</h3>
+        <p>Harga: <span>10K / Bulan</span></p>
+        <a href="https://wa.me/6285713826346?text=Beli%20Panel%20Unlimited" class="btn" target="_blank">Beli Sekarang</a>
+      </div>
+    </div>
+
+    <div class="terms">
+      <h2>📜 Syarat & Ketentuan</h2>
+      <ul>
+        <li>✅ Garansi 10 hari (1x replace)</li>
+        <li>✅ Server anti delay/lemot</li>
+        <li>✅ Claim garansi wajib bawa bukti transaksi</li>
+      </ul>
+    </div>
+    <div class="faq">
+  <h3>❓ Pertanyaan Umum</h3>
+  <p><strong>Q:</strong> Apakah ada masa percobaan?</p>
+  <p><strong>A:</strong> Tidak, namun garansi 10 hari tersedia.</p>
+  </div>
+</script>
+  <!-- Tambahkan di paling bawah sebelum </body> -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+<script>
+  function filterCards() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.panel-cards .card');
+
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      if (text.includes(input)) {
+        card.style.display = 'flex';
+        card.style.opacity = 1;
+        card.style.transform = 'scale(1)';
+      } else {
+        card.style.opacity = 0;
+        card.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          card.style.display = 'none';
+        }, 200); // Waktu animasi
+      }
+    });
+  }
+</script>
+</body>
+</html>
